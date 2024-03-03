@@ -49,7 +49,7 @@ def keyscanorgeninator(encrypt_input):
     
     else:
        print("Invalid Signature, please try again")
-       encrypt_inator
+       encrypt_inator()
 
 # If the message does not have a signature(//) then it will check for a number at the end of the message.
   elif "//" not in encrypt_input:
