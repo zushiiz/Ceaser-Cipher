@@ -27,7 +27,6 @@ def keyscanorgeninator(encrypt_input):
       if key == 0:
 # If the message is not encrypted, so it has 0 shift. It will generate a random key shift for the message.
         key = random.randint(1, 28)
-        return key
       return key
 # Returns the key for the other function.      
 
@@ -35,16 +34,14 @@ def keyscanorgeninator(encrypt_input):
       letter_shift = alpha[name_key[0].upper()]
       key = letter_shift - 0
       if key == 0:
-        key = random.randint(1, 28)
-        return key      
+        key = random.randint(1, 28)      
       return key
     
     elif key_amount == 6:
       letter_shift = alpha[name_key[0].upper()]
       key = letter_shift - 25
       if key == 0:
-        key = random.randint(1, 28)
-        return key      
+        key = random.randint(1, 28)      
       return key
     
     else:
